@@ -9,25 +9,34 @@
 
 
 .containerr{
- 
+    position: relative;
     width: 97%;
-    height: 90%;
     border-radius: 6px;
     padding: 20px;
-    margin:0PX 15px;
-   position: relative;
-    background-color: rgba(255, 255, 255,0.3);
+    margin:50PX 20px;
+    background-color: rgba(255, 255, 255, 0.95);
      backdrop-filter:blur(5px);
     
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-.containerr header{
+.containerrr{
+    position: relative;
+    /* width: 50%; */
+    border-radius: 6px;
+    padding: 20px;
+    margin:50PX 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+     backdrop-filter:blur(5px);
+    
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.containerr header,.containerrr header{
     position: relative;
     font-size: 20px;
     font-weight: 600;
     color: #000;
 }
-.containerr header::before{
+.containerr header::before, .containerrr header::before{
     content: "";
     position: absolute;
     left: 0;
@@ -37,19 +46,22 @@
     border-radius: 8px;
     background-color: #f44336;
 }
-.containerr form{
+.containerr form,
+    .containerr form{
     
     position: relative;
     min-height: 480px;
     /* background-color:#73ac41 ; */
     overflow: hidden;
 }
-.containerr form .form{
+.containerr form .form,
+    .containerr form .form{
     position: absolute;
     background-color: transparent;
     transition: 0.3s ease;
 }
-.containerr form .form.second{
+.containerr form .form.second,
+    .containerr form .form.second{
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
@@ -64,7 +76,8 @@ form.secActive .form.first{
     pointer-events: none;
     transform: translateX(-100%);
 }
-.containerr form .title{
+.containerr form .title,
+    .containerrr form .title{
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -72,7 +85,8 @@ form.secActive .form.first{
     margin: 6px 0;
     color: #000;
 }
-.containerr form .fields{
+.containerr form .fields,
+    .containerrr form .fields{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,14 +99,25 @@ form .fields .input-field{
     margin: 4px 0;
     
 }
-.input-field label{
+form .fields .input-fields{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+    
+}
+.input-field label,
+    .input-fields label{
     font-size: 12px;
     font-weight: 500;
     color: #000;
 }
-.input-field input::placeholder{color: #000;
+.input-field input::placeholder,
+    .input-fields input::placeholder{
+    color: #000;
 opacity: 50%;}
-.input-field input, select{
+.input-field input, select,
+    .input-fields input,textarea, select{
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -106,13 +131,20 @@ opacity: 50%;}
 }
 
 .input-field input :focus,
-.input-field select:focus{
+.input-fields input :focus,
+.input-fields select:focus,
+    .input-field select:focus{
     box-shadow: 0 3px 6px rgba(0,0,0,0.13);
 }
-.input-field select option{
+.input-field select option,
+    .input-fields select option{
     color: black;
 }
 .form-control[data-input]::-webkit-calendar-picker-indicator{text-decoration: #000;}
+
+.input-field input[type="file"]{
+    color: rgba(0, 0, 0, 0.5);
+}
 
 
 .input-field input[type="date"]{
@@ -121,7 +153,7 @@ opacity: 50%;}
 .input-field input[type="date"]:valid{
     color: #000;
 }
-.containerr form button, .backBtn{
+.containerr form button, .backBtn, .submitBtn, .containerr form button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +170,8 @@ opacity: 50%;}
     transition: all 0.3s linear;
     cursor: pointer;
 }
-.containerr form .btnText{
+.containerr form .btnText,
+    .containerr form .btnText{
     font-size: 14px;
     font-weight: 400;
 }
@@ -162,19 +195,23 @@ form .buttons button , .backBtn{
 }
 
 @media (max-width: 750px) {
-    .containerr form{
+    .containerr form,
+        .containerr form{
         overflow-y: scroll;
     }
-    .containerr form::-webkit-scrollbar{
+    .containerr form::-webkit-scrollbar,
+        .containerr form::-webkit-scrollbar{
        display: none;
     }
-    form .fields .input-field{
+    form .fields .input-field,
+        form .fields .input-fields{
         width: calc(100% / 2 - 15px);
     }
 }
 
 @media (max-width: 550px) {
-    form .fields .input-field{
+    form .fields .input-fields,
+        form .fields .input-field{
         width: 100%;
     }
 }

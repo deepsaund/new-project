@@ -27,7 +27,12 @@ $result = mysqli_query($conn, $sql);
 // Perform the database query
 if ($result) {  
     move_uploaded_file($_FILES['photo']['tmp_name'], "pp/".$_FILES["photo"]['name']);
-    echo "Data inserted successfully!";
+    
+    // Store user information in session variables
+    $_SESSION['message'] = "Student added successfully!"; 
+    header("location: home.php#add_students-content");
+   die();
+    
     // header('location:student/home.php');
 } else {
     echo "failed";
@@ -37,4 +42,5 @@ if ($result) {
 }
 // Close the database connection
 mysqli_close($conn);
+
 ?>

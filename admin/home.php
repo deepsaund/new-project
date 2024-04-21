@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,8 +49,8 @@
                             </button>
                             <div class="collapse" id="teachers-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="rounded">Add Teachers</a></li>
-                                    <li><a href="#" class="rounded">Edit Teachers</a></li>
+                                    <li><a href="#add_teachers-content" class="rounded">Add Teachers</a></li>
+                                    <li><a href="#edit_teachers-content" class="rounded">Edit Teachers</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -58,7 +61,7 @@
                             </button>
                             <div class="collapse" id="departments-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#" class="rounded">Add Department</a></li>
+                                    <li><a href="#add_departments-content" class="rounded">Add Department</a></li>
                                     <li><a href="#" class="rounded">Edit Department</a></li>
                                 </ul>
                             </div>
@@ -70,7 +73,7 @@
                             </button>
                             <div class="collapse" id="semester-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li><a href="#students-content" class="rounded">Add Semester</a></li>
+                                    <li><a href="#add_semester-content" class="rounded">Add Semester</a></li>
                                     <li><a href="#" class="rounded">Edit Semester</a></li>
                                 </ul>
                             </div>
@@ -118,26 +121,44 @@
                         </button>
                     </div>
 
-                    
+
                 </div>
                 <div class="main">
+                    
                     <div id="add_students-content" class="row">
-                        <p>test page 1</p>
+
                         <?php
+                       
                         include('add_student.php');
                         ?>
                     </div>
                     <div class="row" id="edit_students-content">
                         <p>ertyttttttttttttttt</p>
                     </div>
-                    <div class="row" id="Department-content">
-    
+                    <div class="row" id="add_teachers-content">
+                        <?php
+                        include('faculty_form.php');
+                        ?>
+
                     </div>
-                    <div class="row" id="semester-content">
-    
+                    <div class="row" id="edit_teachers-content">
+                        hiifffffffffffffffffffffffffee
+
+                    </div>
+                    <div class="row" id="add_departments-content">
+                        <?php
+                        include("department_form.php");
+                        ?>
+
+                    </div>
+                    <div class="row" id="add_semester-content">
+                        <?php
+                        include("semester_form.php");
+                        ?>
+
                     </div>
                     <div class="row" id="courses-content">
-    
+
                     </div>
                 </div>
         </div>
@@ -147,6 +168,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <script src="script.js" ; </body>
+    <script src="script.js"> </script>
+
+</body>
 
 </html>

@@ -185,30 +185,60 @@ a:focus {
 
 
 /* ---------------------------------------------------
-    OPTIONAL NAVBAR HEADER THEME
+OPTIONAL NAVBAR HEADER THEME
 ----------------------------------------------------- */
 
 .offcanvas-header {
   background-color: #0d6efd!important;
   color: white!important;
 }
-#add_students-content{
-    height: 100%;
-   
-    /* background-color: #0000005b; */
-    transition: 0.5s;
-}
-#edit_students-content{
-    height: 100%;
-   
-    background-color: #5be8dc;
-}
 .main{
+ 
     height: 100vh;
     overflow: hidden;
     margin-left:2vw;
-    
+
+     transition: 0.5s;
 }
+#add_students-content{
+    height: 100%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+
+   
+    /* background-color: #ffc400; */
+    transition: 0.5s;
+}
+#edit_students-content{
+    height: 100vh;
+    margin-bottom: 100px;
+    transition: 0.5s;
+    background-color: #3c6161;
+}
+#add_teachers-content{
+  height: 100vh;
+  margin-bottom: 100px;
+   
+  transition: 0.5s;
+   
+  /* background-color: #cb1a1a; */
+}
+#add_departments-content{
+  height: 100vh;
+  margin-bottom: 100px;
+  transition: 0.5s;
+   
+  /* background-color: #cb1a1a; */
+}
+#edit_teachers-content,
+#add_semester-content{
+  height: 100vh;
+   margin-bottom: 100px;
+   transition: all ease-in-out .3s;
+ 
+   /* background-color: #e78686; */
+}
+
 
 /* ---------------------------------------------------
     OPTIONAL DARK SIDEBAR THEME
