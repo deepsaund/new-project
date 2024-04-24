@@ -209,7 +209,8 @@ OPTIONAL NAVBAR HEADER THEME
     /* background-color: #ffc400; */
     transition: 0.5s;
 }
-#edit_students-content{
+#edit_students-content
+  #edit_departments-content{
     height: 100vh;
     margin-bottom: 100px;
     transition: 0.5s;

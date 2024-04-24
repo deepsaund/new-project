@@ -8,11 +8,11 @@
 </head>
 <body>
     <section class="CONTENT">
-        <div class="containerrr">
+        <div class="containr containerrr">
       
             <header>Add Department</header>
 
-            <form action="add_department.php" method="post" class="form">
+            <form action="add_department.php" method="post" >
                 <div class="details">
                     <span class="title">Department Details</span>
 

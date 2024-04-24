@@ -12,15 +12,15 @@ session_start();
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
-  
 
-        <div class="wrapper">
-            <div class="wrapper1">
-                <main class="container">
+
+    <div class="wrapper">
+        <div class="wrapper1">
+            <main class="container">
                 <nav class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
                     data-bs-backdrop="true" data-bs-scroll="true">
                     <div class="offcanvas-header border-bottom">
@@ -31,7 +31,7 @@ session_start();
                         </a>
                     </div>
                     <div class="offcanvas-body px-0">
-    
+
                         <ul class="list-unstyled ps-0">
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse"
@@ -59,7 +59,8 @@ session_start();
                             </li>
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#departments-collapse" aria-expanded="false">
+                                    data-bs-toggle="collapse" data-bs-target="#departments-collapse"
+                                    aria-expanded="false">
                                     Departments
                                 </button>
                                 <div class="collapse" id="departments-collapse">
@@ -95,12 +96,14 @@ session_start();
                             </li>
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#Announcements-collapse" aria-expanded="false">
+                                    data-bs-toggle="collapse" data-bs-target="#Announcements-collapse"
+                                    aria-expanded="false">
                                     Announcements
                                 </button>
                                 <div class="collapse" id="Announcements-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#add_announcements-content" class="rounded">Add Announcement</a></li>
+                                        <li><a href="#add_announcements-content" class="rounded">Add Announcement</a>
+                                        </li>
                                         <li><a href="#" class="rounded">Edit Announcement</a></li>
                                     </ul>
                                 </div>
@@ -127,22 +130,24 @@ session_start();
                     <div class="col">
                         <!-- toggler -->
                         <button id="sidebarCollapse" class="float-end" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas" role="button" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                            data-bs-target="#offcanvas" role="button" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
 
 
                 </div>
                 <div class="main">
-                    
+
                     <div id="add_students-content" class="row">
-                    <div class="add-containerr">
-                    <h2 id="title">Add Students<hr></h2>
-                        <?php
+                        <div class="add-containerr">
+                            <h2 id="title">Add Students
+                                <hr>
+                            </h2>
+                            <?php
                        
                         include('add_student.php');
                         ?>
@@ -150,39 +155,49 @@ session_start();
                     </div>
                     <div class="row" id="edit_students-content">
                         <div class="table-container">
-                            <h2 id="title">Manage Students<hr></h2>
-                      <?php include('manage_std.php'); ?>
+                            <h2 id="title">Manage Students
+                                <hr>
+                            </h2>
+                            <?php include('manage_std.php'); ?>
                         </div>
                     </div>
                     <div class="row" id="add_teachers-content">
-                    <div class="add-container">
-                    <h2 id="title">Add Teachers<hr></h2>
-                        <?php
+                        <div class="add-container">
+                            <h2 id="title">Add Teachers
+                                <hr>
+                            </h2>
+                            <?php
                         include('faculty_form.php');
                         ?>
 
-                    </div>
+                        </div>
                     </div>
                     <div class="row" id="edit_teachers-content">
-                    <div class="table-container">
-                    <h2 id="title">Edit Teachers<hr></h2>
-                    <?php
-                        include('manage_teacher.php');
-                        ?>
-                    </div>
+                        <div class="table-container">
+                            <h2 id="title">Edit Teachers
+                                <hr>
+                            </h2>
+                                <?php
+                            include('manage_teacher.php');
+                            ?>
+                        </div>
                     </div>
                     <div class="row" id="add_departments-content">
                         <div class="table-container">
-                                <h2 id="title">Edit Departments<hr></h2>
+                            <h2 id="title">Edit Departments
+                                <hr>
+                            </h2>
                             <?php
                             include("department_form.php");
                             ?>
 
                         </div>
-                    </div> 
+                    </div>
                     <div class="row" id="edit_departments-content">
                         <div class="table-container">
-                            <h2 id="title">Edit Departments<hr></h2>
+                            <h2 id="title">Edit Departments
+                                <hr>
+                            </h2>
                             <?php
                             include('manage_dept.php');
                             ?>
@@ -195,13 +210,13 @@ session_start();
 
                     </div>
                     <div class="row" id="add_courses-content">
-                        
+
                         <?php
                         include("course_form.php");
                         ?>
                     </div>
                     <div class="row" id="add_announcements-content">
-                        
+
                         <?php
                         include("announcement_form.php");
                         ?>

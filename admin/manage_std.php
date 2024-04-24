@@ -21,6 +21,7 @@
     padding: 20px;
 }
 .containerrr{
+    /* width: 99%; */
     position: relative;
     border-radius: 6px;
     padding: 20px;
@@ -35,7 +36,7 @@
     height: calc(100% - 20px);
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.95);
-    overflow-x: auto; /* Horizontal scroll if needed */
+    overflow: auto; /* Horizontal scroll if needed */
     display: flex;
     flex-direction: column;
     align-items: center;

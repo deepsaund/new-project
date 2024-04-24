@@ -18,6 +18,16 @@
      backdrop-filter:blur(5px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+.containr{
+    position: relative;
+    width: 60vw;
+    border-radius: 6px;
+     padding: 20px;   
+     margin:30PX 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+     backdrop-filter:blur(5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
 .containerrr{
     position: relative;
     /* width: 50%; */
