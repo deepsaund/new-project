@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $course_name = $_POST['course_name'];
     $description = $_POST['description'];
-    $credits = $_POST['credits'];
+    $course_code = $_POST['course_code'];
     $faculty_id = $_POST['faculty_id'];
     $department_id = $_POST['department_id'];
     $semester_id = $_POST['semester_id']; // Ensure this matches the name attribute in course_form.php
@@ -15,8 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare and execute SQL query to insert new course
-    $sql = "INSERT INTO courses (course_name, description, credits, instructor_id, department_id, semester_id) 
-            VALUES ('$course_name', '$description', '$credits', '$faculty_id', '$department_id', '$semester_id')";
+    $sql = "INSERT INTO courses (course_name, description, course_code, instructor_id, department_id, semester_id) 
+            VALUES ('$course_name', '$description', '$course_code', '$faculty_id', '$department_id', '$semester_id')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Course added successfully.";

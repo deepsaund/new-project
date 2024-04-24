@@ -1,0 +1,40 @@
+enroll student 
+course 
+anouncements✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Student Management:
+     View and manage student enrollment in their courses.
+     Grade assignments and provide feedback to students.

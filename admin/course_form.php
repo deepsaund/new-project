@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="CONTENT">
-        <div class="containerr">
+        <div class="containerrr">
             <header>Add Course</header>
 
             <form action="add_course.php" method="post" class="form">
@@ -27,8 +27,8 @@
                         </div>
 
                         <div class="input-fields">
-                            <label>Credits</label>
-                            <input type="number" name="credits" required>
+                            <label>Course Code</label>
+                            <input type="number" name="course_code" required>
                         </div>
 
                         <div class="input-fields">
