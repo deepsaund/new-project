@@ -78,7 +78,7 @@ session_start();
                                 <div class="collapse" id="semester-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a href="#add_semester-content" class="rounded">Add Semester</a></li>
-                                        <li><a href="#" class="rounded">Edit Semester</a></li>
+                                        <li><a href="#edit_semester-content" class="rounded">Edit Semester</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -177,14 +177,14 @@ session_start();
                             <h2 id="title">Edit Teachers
                                 <hr>
                             </h2>
-                                <?php
-                            include('manage_teacher.php');
-                            ?>
+                            <?php
+                        include('manage_teacher.php');
+                        ?>
                         </div>
                     </div>
                     <div class="row" id="add_departments-content">
                         <div class="table-container">
-                            <h2 id="title">Edit Departments
+                            <h2 id="title">Add Departments
                                 <hr>
                             </h2>
                             <?php
@@ -195,7 +195,7 @@ session_start();
                     </div>
                     <div class="row" id="edit_departments-content">
                         <div class="table-container">
-                            <h2 id="title">Edit Departments
+                            <h2 id="title">Manage Departments
                                 <hr>
                             </h2>
                             <?php
@@ -204,10 +204,24 @@ session_start();
                         </div>
                     </div>
                     <div class="row" id="add_semester-content">
+                        <div class="table-container">
+                            <h2 id="title">Add Semester
+                                <hr>
+                            </h2>
                         <?php
                         include("semester_form.php");
                         ?>
-
+                            </div>
+                    </div>
+                    <div class="row" id="edit_semester-content">
+                        <div class="table-container">
+                            <h2 id="title">Manage Semester
+                                <hr>
+                            </h2>
+                        <?php
+                        include("manage_semesters.php");
+                        ?>
+                            </div>
                     </div>
                     <div class="row" id="add_courses-content">
 
