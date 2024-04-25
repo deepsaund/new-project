@@ -90,7 +90,7 @@ session_start();
                                 <div class="collapse" id="courses-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a href="#add_courses-content" class="rounded">Add courses</a></li>
-                                        <li><a href="#" class="rounded">Edit courses</a></li>
+                                        <li><a href="#edit_courses-content" class="rounded">Edit courses</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -104,7 +104,7 @@ session_start();
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a href="#add_announcements-content" class="rounded">Add Announcement</a>
                                         </li>
-                                        <li><a href="#" class="rounded">Edit Announcement</a></li>
+                                        <li><a href="#edit_announcements-content" class="rounded">Edit Announcement</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -116,10 +116,8 @@ session_start();
                                 </button>
                                 <div class="collapse" id="account-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="rounded">New...</a></li>
-                                        <li><a href="#" class="rounded">Profile</a></li>
-                                        <li><a href="#" class="rounded">Settings</a></li>
-                                        <li><a href="#" class="rounded">Sign out</a></li>
+                                        
+                                        <li><a href="../logout.php" class="rounded">Sign out</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -224,16 +222,44 @@ session_start();
                             </div>
                     </div>
                     <div class="row" id="add_courses-content">
-
+                        <div class="table-container">
+                            <h2 id="title">Add Courses
+                                <hr>
+                            </h2>
                         <?php
                         include("course_form.php");
                         ?>
+                        </div>
+                    </div>
+                    <div class="row" id="edit_courses-content">
+                        <div class="table-container">
+                            <h2 id="title">Manage Courses
+                                <hr>
+                            </h2>
+                        <?php
+                        include("manage_courses.php");
+                        ?>
+                        </div>
                     </div>
                     <div class="row" id="add_announcements-content">
-
+                        <div class="add-containerr">
+                            <h2 id="title">Add Announcement
+                                <hr>
+                            </h2>
                         <?php
                         include("announcement_form.php");
                         ?>
+                        </div>
+                    </div>
+                    <div class="row" id="edit_announcements-content">
+                        <div class="add-containerr">
+                            <h2 id="title">Manage announcement
+                                <hr>
+                            </h2>
+                        <?php
+                        include("manage_announcements.php");
+                        ?>
+                        </div>
                     </div>
                 </div>
         </div>

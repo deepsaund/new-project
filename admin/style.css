@@ -205,6 +205,7 @@ OPTIONAL NAVBAR HEADER THEME
     margin-bottom: 100px;
     margin-top: 20px;
 
+    overflow: hidden;
    
     /* background-color: #ffc400; */
     transition: 0.5s;
@@ -214,13 +215,17 @@ OPTIONAL NAVBAR HEADER THEME
     height: 100vh;
     margin-bottom: 100px;
     transition: 0.5s;
-    /* background-color: #3c6161; */
+    overflow: hidden;
+
+    background-color: #3c6161;
 }
 .add-containerr{
 margin-top: 10px;
 background-color: #ffffff;
 width: 100%;
 height: calc(100% - 20px);
+
+
 }
 .add-container{
   margin-top: 10px;
@@ -234,6 +239,7 @@ height: calc(100% - 20px);
 #add_teachers-content{
   height: 100vh;
   margin-bottom: 100px;
+  overflow: hidden;
    
   transition: 0.5s;
    
@@ -243,14 +249,16 @@ height: calc(100% - 20px);
   height: 100vh;
   margin-bottom: 100px;
   transition: 0.5s;
+  overflow: hidden;
    
   /* background-color: #cb1a1a; */
 }
 #edit_teachers-content,#add_courses-content,#add_announcements-content,
-#add_semester-content{
+#add_semester-content,#edit_courses-content,#edit_announcements-content{
   height: 100vh;
-   margin-bottom: 100px;
+   margin-bottom: 300px;
    transition: all ease-in-out .3s;
+   /* overflow: hidden; */
  
    /* background-color: #e78686; */
 }

@@ -11,7 +11,7 @@
             background-color: #f4f4f4;
             padding: 20px;
         }
-        .container {
+        .containrr {
             max-width: 600px;
             margin: 0 auto;
             background-color: #fff;
@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="containrr">
         <h2>Edit Semester</h2>
 
         <?php

@@ -23,7 +23,7 @@
             padding: 20px;
         }
 
-        .container {
+        .containrr {
             position: relative;
             border-radius: 6px;
             padding: 20px;
@@ -78,7 +78,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="containrr">
         <h2>Edit Department</h2>
 
         <?php

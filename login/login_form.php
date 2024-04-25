@@ -1,3 +1,16 @@
+
+<?php
+session_start();
+if(isset($_COOKIE['username'])){
+    $_SESSION['username']= $_COOKIE['username'];
+    $_SESSION['user_type']= $_COOKIE['user_type'];
+    $user_type= $_COOKIE['user_type'];
+    if($user_type=='admin'){
+        header('location:admin/home.php');
+    }
+    
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +40,7 @@
         <option value="admin">Admin</option>
       </select>
     </div>
-    <button type="submit">Login</button>
+    <button type="submit" name="login_press">Login</button>
   </form>
   </div>
 </div>

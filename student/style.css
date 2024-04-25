@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: relative;
+     margin: 50px;
+    
+    
+gap: 40px;
+}
+.left-side{
+    width: 30%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    overflow:hidden;
+}
+.logo{
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 175px;
+    background:rgba(255,255,255,.08);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    
+
+
+}
+.profile-pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 4px solid #fff;
+
+}
+.profile-text{
+    color: #fff;
+    text-align: center;
+}
+.links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the links vertically */
+    position: relative;
+    
+}
+.links ul li{
+    list-style: none;
+margin-bottom:13px;
+
+}
+.links ul li a {
+    width: 100%;
+    height: 100%;
+    padding: 16px 60px; 
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
+   
+}
+.links ul li a:hover{
+    background:rgba(255,255,255,.4);
+    color:rgba(4, 9, 30);
+    transition: none; 
+
+}
+
+
+.main{
+     width: 100%;/* changed 80 to 100 */
+    height: 100%;
+    /* background: rgba(255,255,255,.2); */
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.main-c{
+    margin-bottom: 250px;
+    
+    
+}
+#home-content{
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#genInfo-content{
+    height:100%;
+    width: 100%;
+    background: rgba(255,255,255,.1)
+    /* display: none; */
+    
+}
+
+/* -----------------------------------------------------------SUBJECT CONTENT-------------------------------------------------- */
+.sub-content{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,255,255,.1);
+  
+  
+}
+.tablink {
+    background-color: rgba(255,255,255,.4);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  .r{
+    width: calc(100%/6);
+  }
+  .tabcontent h3{
+    text-align: center;
+  }
+  
+  .tablink:hover {
+    background-color: #e46afd;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    
+  }
+  
+
+  
+  #BOM {background-color: rgba(255, 255, 255, 0.1);}
+  #DM {background-color: rgba(255, 255, 255, 0.1);}
+  #CPI {background-color: rgba(255, 255, 255, 0.1);}
+
+  #WD {background-color: rgba(255, 255, 255, 0.1);}
+  #MT {background-color: rgba(255, 255, 255, 0.1);}
+  
+  /* ---------------------------------------------------RESULT CONTENT------------------------------------------------------- */
+#rslt-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.2);
+   
+
+}
+
+  /* ---------------------------------------------------GEN INFO CONTENT------------------------------------------------------- */
+
+
+#genInfo-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+form{
+    width: 70%;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 50px;
+}
+#genInfo-content form .title{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+   
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px 0 0 0;
+    color: #fff;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.5;
+}
+#genInfo-content form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10%;
+
+}
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+    /* background: red; */
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.input-field input::placeholder{color: #fff;
+    opacity: 50%;}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.50);
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    background: none;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select option{
+    color: black;
+}
+
+.input-field select,
+.input-field input[type="date"]{
+    color: rgba(255,255,255,.5);
+}
+.input-field input[type="date"]:valid{
+    color: #fff;
+}
+
+
+#update_btn{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    /* max-width: 200px; */
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin:25px 0px;
+    background-color: #fd746a;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
+
+
+/* temp */
+
+.assignment-content {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-content h4 {
+    font-size: 20px;
+    color: #ff8484;
+}
+
+.assignment-content p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.assignment-content p.description {
+    font-style: italic;
+}
+
+
+
+/*  checking media query */
+@media (max-width: 768px) {
+    .crd_container {
+        flex-direction: column; /* Stack the left and right sides vertically */
+    }
+
+    .left-side {
+        width: 100%;
+        overflow: scroll;
+        margin: 0; /* Remove the margin */
+        order: 2; /* Move the left side below the main content */
+    }
+
+    .main {
+        width: 100%; /* Take the full width */
+        margin-top: 20px; /* Add some top margin for separation */
+    }
+}
+/* ---------------------------------------------------result page-------------------------------------------- */
+
+/* #sem1 {background-color: rgba(255, 255, 255, 0.1);}
+#sem2 {background-color: rgba(255, 255, 255, 0.1);}
+#sem3 {background-color: rgba(255, 255, 255, 0.1);}
+
+#sem4 {background-color: rgba(255, 255, 255, 0.1);}
+#sem5 {background-color: rgba(255, 255, 255, 0.1);}
+#sem6 {background-color: rgba(255, 255, 255, 0.1);} */
+.table_cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

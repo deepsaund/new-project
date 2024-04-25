@@ -23,7 +23,7 @@
             padding: 20px;
         }
 
-        .container {
+        /* .container {
             position: relative;
             border-radius: 6px;
             padding: 20px;
@@ -32,7 +32,7 @@
             backdrop-filter: blur(5px);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-        }
+        } */
 
         h2 {
             text-align: center;

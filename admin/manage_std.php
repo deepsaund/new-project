@@ -36,7 +36,7 @@
     height: calc(100% - 20px);
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.95);
-    overflow: auto; /* Horizontal scroll if needed */
+    overflow-x: auto; /* Horizontal scroll if needed */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -79,7 +79,7 @@ table tbody tr:nth-child(even) {
 
 /* Default styles for the table */
 table {
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     margin-top: 20px;
 }
