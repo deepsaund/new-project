@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-session_start();
-if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'student') {
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] != 'student') {
     header("Location: ../login/login_form.php");
     exit();
 }
