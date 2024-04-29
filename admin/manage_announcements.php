@@ -74,7 +74,7 @@
 
     if ($result->num_rows > 0) {
         // Display announcements in a table
-        echo '<table>';
+        echo '<table class="containerr">';
         echo '<tr><th>Title</th><th>Content</th><th>Posting Date</th><th>Action</th></tr>';
         while ($row = $result->fetch_assoc()) {
             echo '<tr>';
@@ -83,9 +83,9 @@
             echo '<td>' . $row['posting_date'] . '</td>';
             echo '<td class="action-links">';
             // Edit Announcement Link with Font Awesome Icon
-            echo '<a href="edit_announcement.php?announcement_id=' . $row["announcement_id"] . '"><i class="fas fa-edit"></i></a>';
+            echo '<a href="edit_announcement.php?announcement_id=' . $row["announcement_id"] . '"><i class="fa-regular fa-pen-to-square fa-sm"></i></a>';
             // Delete Announcement Link with Font Awesome Icon and Confirmation
-            echo '<a href="delete_announcement.php?announcement_id=' . $row["announcement_id"] . '" onclick="return confirm(\'Are you sure you want to delete this announcement?\')"><i class="fas fa-trash-alt"></i></a>';
+            echo '<a href="delete_announcement.php?announcement_id=' . $row["announcement_id"] . '" onclick="return confirm(\'Are you sure you want to delete this announcement?\')"><i class="fa-solid fa-trash fa-sm"></i></a>';
             echo '</td>';
             echo '</tr>';
         }

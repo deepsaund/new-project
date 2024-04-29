@@ -51,7 +51,7 @@ table {
 
 table th,
 table td {
-    padding: 0 20px;
+    padding: 10px 20px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -123,7 +123,7 @@ table {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        echo '<table class="containerrr">';
+        echo '<table class="containerr">';
         echo '<thead>
             <tr>
                     <th>Student ID</th>

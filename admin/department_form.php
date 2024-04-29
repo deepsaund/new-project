@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="CONTENT">
-        <div class="containr containerrr">
+        <div class="containr containerr">
       
             <header>Add Department</header>
 

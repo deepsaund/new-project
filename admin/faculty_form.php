@@ -10,7 +10,7 @@
 
 <body>
     <section class="CONTENT">
-        <div class="containerrr">
+        <div class="containerr">
             <header>Add Faculty</header>
 
             <form action="add_faculty.php" enctype="multipart/form-data" method="post">

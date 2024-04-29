@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Course</title>
-    <link rel="stylesheet" href="add_std.css"> <!-- Include your custom CSS file -->
+    <link rel="stylesheet" href="add_std.css"> 
 </head>
 <body>
-    <section class="CONTENT">
-        <div class="containerrr">
+    <!-- <section class="CONTENT"> -->
+        <div class="containerr">
             <header>Add Course</header>
 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="form">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
                 <div class="details">
                     <span class="title">Course Details</span>
 
@@ -122,7 +122,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    <!-- </section> -->
 </body>
 </html>
 

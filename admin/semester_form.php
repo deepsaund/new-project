@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="CONTENT">
-        <div class="containerrr">
+        <div class="containerr">
             <header>Add Semester</header>
 
             <form action="add_semester.php" method="post" class="form">

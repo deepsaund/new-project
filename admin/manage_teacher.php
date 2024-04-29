@@ -109,7 +109,7 @@ table {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        echo '<table class="containerrr">';
+        echo '<table class="containerr">';
         echo '<thead>
             <tr>
                     <th>faculty ID</th>

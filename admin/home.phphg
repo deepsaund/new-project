@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'admin') {
-    header("Location: ../login/login_form.php");
-    exit();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,18 +33,6 @@ if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'admin') {
                     <div class="offcanvas-body px-0">
 
                         <ul class="list-unstyled ps-0">
-                        <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse"
-                                    data-bs-target="#users-collapse" aria-expanded="false">
-                                    users
-                                </button>
-                                <div class="collapse show" id="users-collapse" style="">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#add_users-content" class="rounded">Add Users</a></li>
-                                        <li><a href="#edit_users-content" class="rounded">Edit users</a></li>
-                                    </ul>
-                                </div>
-                            </li>
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse"
                                     data-bs-target="#students-collapse" aria-expanded="false">
@@ -120,7 +104,8 @@ if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'admin') {
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a href="#add_announcements-content" class="rounded">Add Announcement</a>
                                         </li>
-                                        <li><a href="#edit_announcements-content" class="rounded">Edit Announcement</a></li>
+                                        <li><a href="#edit_announcements-content" class="rounded">Edit Announcement</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -132,7 +117,7 @@ if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'admin') {
                                 </button>
                                 <div class="collapse" id="account-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        
+
                                         <li><a href="../logout.php" class="rounded">Sign out</a></li>
                                     </ul>
                                 </div>
@@ -155,159 +140,29 @@ if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'admin') {
 
                 </div>
                 <div class="main">
-                <div id="add_users-content" class="row">
-                        <div class="add-containerr">
-                            <h2 id="title">Add users
-                                <hr>
-                            </h2>
-                            <?php
-                       
-                        include('../user-reg/reg.php');
-                        ?>
-                        </div>
-                    </div>
-                    <div id="edit_users-content" class="row">
-                        <div class="table-containerr">
-                            <h2 id="title">Add users
-                                <hr>
-                            </h2>
-                            <?php
-                       
-                        include('../user-reg/reg.php');
-                        ?>
-                        </div>
-                    </div>
                     <div id="add_students-content" class="row">
-                        <div class="add-containerr">
-                            <h2 id="title">Add Students
-                                <hr>
-                            </h2>
-                            <?php
-                       
-                        include('add_student.php');
+                        <?php
+
+                        include ('add_student.php');
                         ?>
-                        </div>
                     </div>
                     <div class="row" id="edit_students-content">
-                        <div class="table-container">
-                            <h2 id="title">Manage Students
-                                <hr>
-                            </h2>
-                            <?php include('manage_std.php'); ?>
-                        </div>
-                    </div>
-                    <div class="row" id="add_teachers-content">
-                        <div class="table-container">
-                            <h2 id="title">Add Teachers
-                                <hr>
-                            </h2>
-                            <?php
-                        include('faculty_form.php');
-                        ?>
+                        <h2 id="title">Manage Students
+                          
+                        </h2>
+                        <?php include ('manage_std.php'); ?>
 
-                        </div>
-                    </div>
-                    <div class="row" id="edit_teachers-content">
-                        <div class="table-container">
-                            <h2 id="title">Edit Teachers
-                                <hr>
-                            </h2>
-                            <?php
-                        include('manage_teacher.php');
-                        ?>
-                        </div>
-                    </div>
-                    <div class="row" id="add_departments-content">
-                        <div class="table-container">
-                            <h2 id="title">Add Departments
-                                <hr>
-                            </h2>
-                            <?php
-                            include("department_form.php");
-                            ?>
-
-                        </div>
-                    </div>
-                    <div class="row" id="edit_departments-content">
-                        <div class="table-container">
-                            <h2 id="title">Manage Departments
-                                <hr>
-                            </h2>
-                            <?php
-                            include('manage_dept.php');
-                            ?>
-                        </div>
-                    </div>
-                    <div class="row" id="add_semester-content">
-                        <div class="table-container">
-                            <h2 id="title">Add Semester
-                                <hr>
-                            </h2>
-                        <?php
-                        include("semester_form.php");
-                        ?>
-                            </div>
-                    </div>
-                    <div class="row" id="edit_semester-content">
-                        <div class="table-container">
-                            <h2 id="title">Manage Semester
-                                <hr>
-                            </h2>
-                        <?php
-                        include("manage_semesters.php");
-                        ?>
-                            </div>
-                    </div>
-                    <div class="row" id="add_courses-content">
-                        <div class="table-container">
-                            <h2 id="title">Add Courses
-                                <hr>
-                            </h2>
-                        <?php
-                        include("course_form.php");
-                        ?>
-                        </div>
-                    </div>
-                    <div class="row" id="edit_courses-content">
-                        <div class="table-container">
-                            <h2 id="title">Manage Courses
-                                <hr>
-                            </h2>
-                        <?php
-                        include("manage_courses.php");
-                        ?>
-                        </div>
-                    </div>
-                    <div class="row" id="add_announcements-content">
-                        <div class="add-containerr">
-                            <h2 id="title">Add Announcement
-                                <hr>
-                            </h2>
-                        <?php
-                        include("announcement_form.php");
-                        ?>
-                        </div>
-                    </div>
-                    <div class="row" id="edit_announcements-content">
-                        <div class="add-containerr">
-                            <h2 id="title">Manage announcement
-                                <hr>
-                            </h2>
-                        <?php
-                        include("manage_announcements.php");
-                        ?>
-                        </div>
                     </div>
                 </div>
+            </main>
+
         </div>
-        </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
     <script src="script.js"> </script>
-
 </body>
 
 </html>
