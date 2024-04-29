@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'connection.php';
+include_once '../connection.php';
 if(isset($_POST['login_press'])){
 
 	$username= $_POST['username'];
@@ -31,8 +31,8 @@ if(isset($_POST['login_press'])){
 			if($user_type=='admin'){
 				header('location:admin/home.php');
 			}
-			elseif($user_type=='class_incharge'){
-				header('location:class_incharge/home.php');
+			elseif($user_type=='faculty'){
+				header('location:faculty/home.php');
 			}
 			elseif($user_type=='student'){
 				header('location:student/home.php');
